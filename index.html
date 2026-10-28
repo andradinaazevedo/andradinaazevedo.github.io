@@ -1,0 +1,486 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Andradina Azevedo — diretor e diretor de fotografia. Cinema e projetos audiovisuais.">
+  <title>Andradina Azevedo — Director & Cinematographer</title>
+
+  <style>
+    :root {
+      --background: #f4f3ef;
+      --text: #242420;
+      --muted: #77766f;
+      --line: #d9d8d1;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1440px, 100%);
+      margin: auto;
+      padding: 0 5%;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding-top: 32px;
+      padding-bottom: 28px;
+    }
+
+    .identity h1 {
+      margin: 0;
+      font-size: clamp(19px, 2vw, 27px);
+      font-weight: 500;
+      letter-spacing: -0.8px;
+    }
+
+    .identity p {
+      margin: 7px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: 0.7px;
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+      font-size: 11px;
+      letter-spacing: 1.2px;
+    }
+
+    nav a:hover,
+    footer a:hover {
+      opacity: 0.55;
+    }
+
+    .hero {
+      margin-top: 8px;
+    }
+
+    .hero-image {
+      width: 100%;
+      aspect-ratio: 2.15 / 1;
+      display: block;
+      object-fit: cover;
+      object-position: center 45%;
+      background: #d0cec6;
+    }
+
+    .hero-caption {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 14px 0 0;
+      color: var(--muted);
+      font-size: 10px;
+      letter-spacing: 1.3px;
+    }
+
+    section {
+      padding-top: 90px;
+    }
+
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 20px;
+      margin-bottom: 25px;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 1.8px;
+    }
+
+    .section-heading span {
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 42px 22px;
+    }
+
+    .work-card {
+      display: block;
+      min-width: 0;
+    }
+
+    .work-card img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      display: block;
+      object-fit: cover;
+      background: #dedcd5;
+      transition: opacity 0.25s ease;
+    }
+
+    .work-card:hover img {
+      opacity: 0.82;
+    }
+
+    .work-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      padding-top: 12px;
+    }
+
+    .work-info h3 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .work-info span {
+      color: var(--muted);
+      font-size: 11px;
+      white-space: nowrap;
+    }
+
+    .work-type {
+      margin: 7px 0 0;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .about-layout {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .about-copy {
+      max-width: 640px;
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+    .about-copy p {
+      margin: 0 0 20px;
+    }
+
+    .about-photo {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      background: #dedcd5;
+    }
+
+    .about-placeholder {
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.6;
+    }
+
+    footer {
+      margin-top: 110px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      border-top: 1px solid var(--line);
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .footer-name {
+      font-size: 13px;
+      letter-spacing: 0.5px;
+    }
+
+    .footer-role {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 11px;
+    }
+
+    .copyright {
+      margin-top: 25px;
+      padding-bottom: 25px;
+      color: var(--muted);
+      font-size: 10px;
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        padding-right: 5%;
+        padding-left: 5%;
+      }
+
+      header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 22px;
+        padding-top: 25px;
+      }
+
+      nav {
+        gap: 22px;
+      }
+
+      .hero-image {
+        aspect-ratio: 4 / 3;
+      }
+
+      section {
+        padding-top: 65px;
+      }
+
+      .work-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .about-layout {
+        grid-template-columns: 1fr;
+        gap: 25px;
+      }
+
+      .about-copy {
+        font-size: 15px;
+      }
+
+      .about-photo {
+        max-width: 380px;
+      }
+
+      footer {
+        margin-top: 75px;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <a class="identity" href="#" aria-label="Página inicial">
+        <h1>ANDRADINA AZEVEDO</h1>
+        <p>Director &amp; Cinematographer</p>
+      </a>
+
+      <nav aria-label="Navegação principal">
+        <a href="#work">WORK</a>
+        <a href="#about">ABOUT</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <!-- Substituir esta imagem pelo seu reel quando estiver pronto -->
+        <img
+          class="hero-image"
+          src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=2000&q=85"
+          alt="Imagem cinematográfica de abertura"
+        >
+        <div class="hero-caption">
+          <span>FILM · IMAGE · STORY</span>
+          <span>BRASIL</span>
+        </div>
+      </div>
+
+      <section id="work">
+        <div class="section-heading">
+          <h2>SELECTED WORKS</h2>
+          <span>Filmography</span>
+        </div>
+
+        <div class="work-grid">
+
+          <a class="work-card" href="#madame-durocher">
+            <img
+              src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80"
+              alt="Imagem provisória para Madame Durocher"
+              loading="lazy"
+            >
+            <div class="work-info">
+              <h3>Madame Durocher</h3>
+              <span>2024</span>
+            </div>
+            <p class="work-type">Longa-metragem</p>
+          </a>
+
+          <a class="work-card" href="#eike">
+            <img
+              src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1200&q=80"
+              alt="Imagem provisória para Eike – Tudo ou Nada"
+              loading="lazy"
+            >
+            <div class="work-info">
+              <h3>Eike – Tudo ou Nada</h3>
+              <span>2021</span>
+            </div>
+            <p class="work-type">Longa-metragem</p>
+          </a>
+
+          <a class="work-card" href="#30-anos-blues">
+            <img
+              src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80"
+              alt="Imagem provisória para 30 Anos Blues"
+              loading="lazy"
+            >
+            <div class="work-info">
+              <h3>30 Anos Blues</h3>
+              <span>2019</span>
+            </div>
+            <p class="work-type">Longa-metragem</p>
+          </a>
+
+          <a class="work-card" href="#bruta-flor">
+            <img
+              src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1200&q=80"
+              alt="Imagem provisória para A Bruta Flor do Querer"
+              loading="lazy"
+            >
+            <div class="work-info">
+              <h3>A Bruta Flor do Querer</h3>
+              <span>2013</span>
+            </div>
+            <p class="work-type">Longa-metragem</p>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- Seções iniciais para os detalhes dos filmes.
+           Depois podemos transformá-las em páginas individuais. -->
+
+      <section id="madame-durocher">
+        <div class="section-heading">
+          <h2>MADAME DUROCHER</h2>
+          <span>2024</span>
+        </div>
+        <p class="about-placeholder">
+          Longa-metragem · Brasil / França<br>
+          Espaço reservado para créditos, sinopse, trailer, stills e prêmios.
+        </p>
+      </section>
+
+      <section id="eike">
+        <div class="section-heading">
+          <h2>EIKE – TUDO OU NADA</h2>
+          <span>2021</span>
+        </div>
+        <p class="about-placeholder">
+          Longa-metragem · Brasil<br>
+          Espaço reservado para créditos, sinopse, trailer, stills e prêmios.
+        </p>
+      </section>
+
+      <section id="30-anos-blues">
+        <div class="section-heading">
+          <h2>30 ANOS BLUES</h2>
+          <span>2019</span>
+        </div>
+        <p class="about-placeholder">
+          Longa-metragem · Brasil<br>
+          Espaço reservado para créditos, sinopse, trailer, stills e prêmios.
+        </p>
+      </section>
+
+      <section id="bruta-flor">
+        <div class="section-heading">
+          <h2>A BRUTA FLOR DO QUERER</h2>
+          <span>2013</span>
+        </div>
+        <p class="about-placeholder">
+          Longa-metragem · Brasil<br>
+          Espaço reservado para créditos, sinopse, trailer, stills e prêmios.
+        </p>
+      </section>
+
+      <section id="about">
+        <div class="section-heading">
+          <h2>ABOUT</h2>
+        </div>
+
+        <div class="about-layout">
+          <div class="about-copy">
+            <p>
+              Andradina Azevedo é diretor de cinema e diretor de fotografia
+              brasileiro.
+            </p>
+            <p>
+              Esta apresentação será substituída por uma biografia que conte
+              sua trajetória, seus filmes e sua relação com a imagem e o cinema.
+            </p>
+            <p class="about-placeholder">
+              Biografia em desenvolvimento.
+            </p>
+          </div>
+
+          <!-- Opcional: substituir por um retrato seu -->
+          <div class="about-placeholder">
+            Retrato do diretor — opcional.
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <div class="footer-name">ANDRADINA AZEVEDO</div>
+        <div class="footer-role">Director &amp; Cinematographer</div>
+      </div>
+
+      <div class="footer-links">
+        <!-- Substituir pelos seus links reais -->
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+        <a href="https://www.imdb.com/" target="_blank" rel="noopener noreferrer">IMDb ↗</a>
+        <a href="mailto:SEUEMAIL@EXEMPLO.COM">Email ↗</a>
+      </div>
+    </footer>
+
+    <div class="copyright">
+      © <span id="year"></span> Andradina Azevedo
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
