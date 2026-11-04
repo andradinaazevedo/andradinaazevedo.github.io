@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -83,23 +82,23 @@
     }
 
     .hero-video {
-  display: block;
-  width: 100%;
-  max-width: none;
-  aspect-ratio: 1920 / 820;
-  position: relative;
-  overflow: hidden;
-  background: #242420;
-}
+      display: block;
+      width: 100%;
+      max-width: none;
+      aspect-ratio: 1920 / 820;
+      position: relative;
+      overflow: hidden;
+      background: #242420;
+    }
 
-.hero-video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
+    .hero-video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
 
     .hero-caption {
       display: flex;
@@ -137,8 +136,8 @@
 
     .work-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 42px 22px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 38px 22px;
     }
 
     .work-card {
@@ -183,6 +182,7 @@
       margin: 7px 0 0;
       color: var(--muted);
       font-size: 11px;
+      line-height: 1.6;
     }
 
     .about-layout {
@@ -268,10 +268,6 @@
         gap: 22px;
       }
 
-      .hero-image {
-        aspect-ratio: 4 / 3;
-      }
-
       section {
         padding-top: 65px;
       }
@@ -320,16 +316,15 @@
 
     <main>
       <div class="hero">
-        <!-- Substituir esta imagem pelo seu reel quando estiver pronto -->
         <div class="hero-video">
-  <iframe
-    src="https://player.vimeo.com/video/1242905883?background=1&autopause=0"
-    frameborder="0"
-    allow="autoplay; fullscreen; picture-in-picture"
-    title="Reel Site Banner - Andradina Azevedo"
-  ></iframe>
-</div>
-        >
+          <iframe
+            src="https://player.vimeo.com/video/1242905883?background=1&autopause=0"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            title="Reel Site Banner - Andradina Azevedo"
+          ></iframe>
+        </div>
+
         <div class="hero-caption">
           <span>FILM · IMAGE · STORY</span>
           <span>BRASIL</span>
@@ -354,7 +349,7 @@
               <h3>Madame Durocher</h3>
               <span>2024</span>
             </div>
-            <p class="work-type">Longa-metragem</p>
+            <p class="work-type">Longa-metragem · Direção · Direção de fotografia</p>
           </a>
 
           <a class="work-card" href="#eike">
@@ -365,22 +360,22 @@
             >
             <div class="work-info">
               <h3>Eike – Tudo ou Nada</h3>
-              <span>2021</span>
+              <span>2022</span>
             </div>
-            <p class="work-type">Longa-metragem</p>
+            <p class="work-type">Longa-metragem · Direção · Direção de fotografia · Roteiro</p>
           </a>
 
-          <a class="work-card" href="#30-anos-blues">
+          <a class="work-card" href="#conspiracao-condor">
             <img
               src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80"
-              alt="Imagem provisória para 30 Anos Blues"
+              alt="Imagem provisória para A Conspiração Condor"
               loading="lazy"
             >
             <div class="work-info">
-              <h3>30 Anos Blues</h3>
-              <span>2019</span>
+              <h3>A Conspiração Condor</h3>
+              <span>2025</span>
             </div>
-            <p class="work-type">Longa-metragem</p>
+            <p class="work-type">Longa-metragem · Direção de fotografia</p>
           </a>
 
           <a class="work-card" href="#bruta-flor">
@@ -393,14 +388,102 @@
               <h3>A Bruta Flor do Querer</h3>
               <span>2013</span>
             </div>
-            <p class="work-type">Longa-metragem</p>
+            <p class="work-type">Longa-metragem · Direção · Direção de fotografia · Roteiro</p>
+          </a>
+
+          <a class="work-card" href="#30-anos-blues">
+            <img
+              src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1200&q=80"
+              alt="Imagem provisória para 30 Anos Blues"
+              loading="lazy"
+            >
+            <div class="work-info">
+              <h3>30 Anos Blues</h3>
+              <span>2019</span>
+            </div>
+            <p class="work-type">Longa-metragem · Direção · Direção de fotografia · Roteiro</p>
+          </a>
+
+          <a class="work-card" href="#amor-doce-confusao">
+            <img
+              src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80"
+              alt="Imagem provisória para Amor Doce Confusão"
+              loading="lazy"
+            >
+            <div class="work-info">
+              <h3>Amor Doce Confusão</h3>
+              <span>2025</span>
+            </div>
+            <p class="work-type">Longa-metragem · Direção de fotografia</p>
+          </a>
+
+          <a class="work-card" href="#crime-sem-castigo">
+            <img
+              src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80"
+              alt="Imagem provisória para Crime Sem Castigo"
+              loading="lazy"
+            >
+            <div class="work-info">
+              <h3>Crime Sem Castigo</h3>
+              <span>2026</span>
+            </div>
+            <p class="work-type">Longa-metragem · Direção de fotografia</p>
+          </a>
+
+          <a class="work-card" href="#quem-parte-quem-fica">
+            <img
+              src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1200&q=80"
+              alt="Imagem provisória para Quem Parte, Quem Fica?"
+              loading="lazy"
+            >
+            <div class="work-info">
+              <h3>Quem Parte, Quem Fica?</h3>
+              <span>2027</span>
+            </div>
+            <p class="work-type">Longa-metragem · Direção · Direção de fotografia</p>
+          </a>
+
+          <a class="work-card" href="#lumem-craft">
+            <img
+              src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80"
+              alt="Imagem provisória para Lumem Craft – Creation"
+              loading="lazy"
+            >
+            <div class="work-info">
+              <h3>Lumem Craft – Creation</h3>
+              <span>2019</span>
+            </div>
+            <p class="work-type">Videoclipe · Direção de fotografia</p>
+          </a>
+
+          <a class="work-card" href="#short-films">
+            <img
+              src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80"
+              alt="Imagem provisória para Curtas-metragens"
+              loading="lazy"
+            >
+            <div class="work-info">
+              <h3>Curtas-metragens</h3>
+              <span>Filmografia</span>
+            </div>
+            <p class="work-type">Seleção de curtas-metragens</p>
+          </a>
+
+          <a class="work-card" href="#commercials">
+            <img
+              src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1200&q=80"
+              alt="Imagem provisória para Comerciais e Institucionais"
+              loading="lazy"
+            >
+            <div class="work-info">
+              <h3>Comerciais &amp; Institucionais</h3>
+              <span>Seleção</span>
+            </div>
+            <p class="work-type">Filmes publicitários e institucionais</p>
           </a>
 
         </div>
       </section>
-
-      <!-- Seções iniciais para os detalhes dos filmes.
-           Depois podemos transformá-las em páginas individuais. -->
 
       <section id="madame-durocher">
         <div class="section-heading">
@@ -416,7 +499,7 @@
       <section id="eike">
         <div class="section-heading">
           <h2>EIKE – TUDO OU NADA</h2>
-          <span>2021</span>
+          <span>2022</span>
         </div>
         <p class="about-placeholder">
           Longa-metragem · Brasil<br>
@@ -466,7 +549,6 @@
             </p>
           </div>
 
-          <!-- Opcional: substituir por um retrato seu -->
           <div class="about-placeholder">
             Retrato do diretor — opcional.
           </div>
@@ -481,7 +563,6 @@
       </div>
 
       <div class="footer-links">
-        <!-- Substituir pelos seus links reais -->
         <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
         <a href="https://www.imdb.com/" target="_blank" rel="noopener noreferrer">IMDb ↗</a>
         <a href="mailto:SEUEMAIL@EXEMPLO.COM">Email ↗</a>
