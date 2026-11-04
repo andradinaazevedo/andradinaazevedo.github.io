@@ -172,14 +172,17 @@
       font-weight: 400;
     }
 
-    .work-info span {
+    .work-meta {
+      flex-shrink: 0;
       color: var(--muted);
-      font-size: 11px;
+      font-size: 10px;
+      letter-spacing: 0.4px;
       white-space: nowrap;
+      text-align: right;
     }
 
-    .work-type {
-      margin: 7px 0 0;
+    .work-roles {
+      margin: 6px 0 0;
       color: var(--muted);
       font-size: 11px;
       line-height: 1.6;
@@ -251,6 +254,18 @@
       font-size: 10px;
     }
 
+    @media (max-width: 900px) {
+      .work-info {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .work-meta {
+        text-align: left;
+      }
+    }
+
     @media (max-width: 640px) {
       .container {
         padding-right: 5%;
@@ -275,6 +290,16 @@
       .work-grid {
         grid-template-columns: 1fr;
         gap: 30px;
+      }
+
+      .work-info {
+        align-items: baseline;
+        flex-direction: row;
+        gap: 12px;
+      }
+
+      .work-meta {
+        text-align: right;
       }
 
       .about-layout {
@@ -347,9 +372,9 @@
             >
             <div class="work-info">
               <h3>Madame Durocher</h3>
-              <span>2024</span>
+              <span class="work-meta">LONGA-METRAGEM · 2024</span>
             </div>
-            <p class="work-type">Longa-metragem · Direção · Direção de fotografia</p>
+            <p class="work-roles">Direção · Direção de fotografia</p>
           </a>
 
           <a class="work-card" href="#eike">
@@ -360,9 +385,9 @@
             >
             <div class="work-info">
               <h3>Eike – Tudo ou Nada</h3>
-              <span>2022</span>
+              <span class="work-meta">LONGA-METRAGEM · 2022</span>
             </div>
-            <p class="work-type">Longa-metragem · Direção · Direção de fotografia · Roteiro</p>
+            <p class="work-roles">Direção · Direção de fotografia · Roteiro</p>
           </a>
 
           <a class="work-card" href="#conspiracao-condor">
@@ -373,9 +398,9 @@
             >
             <div class="work-info">
               <h3>A Conspiração Condor</h3>
-              <span>2025</span>
+              <span class="work-meta">LONGA-METRAGEM · 2025</span>
             </div>
-            <p class="work-type">Longa-metragem · Direção de fotografia</p>
+            <p class="work-roles">Direção de fotografia</p>
           </a>
 
           <a class="work-card" href="#bruta-flor">
@@ -386,9 +411,9 @@
             >
             <div class="work-info">
               <h3>A Bruta Flor do Querer</h3>
-              <span>2013</span>
+              <span class="work-meta">LONGA-METRAGEM · 2013</span>
             </div>
-            <p class="work-type">Longa-metragem · Direção · Direção de fotografia · Roteiro</p>
+            <p class="work-roles">Direção · Direção de fotografia · Roteiro</p>
           </a>
 
           <a class="work-card" href="#30-anos-blues">
@@ -399,9 +424,9 @@
             >
             <div class="work-info">
               <h3>30 Anos Blues</h3>
-              <span>2019</span>
+              <span class="work-meta">LONGA-METRAGEM · 2019</span>
             </div>
-            <p class="work-type">Longa-metragem · Direção · Direção de fotografia · Roteiro</p>
+            <p class="work-roles">Direção · Direção de fotografia · Roteiro</p>
           </a>
 
           <a class="work-card" href="#amor-doce-confusao">
@@ -412,9 +437,9 @@
             >
             <div class="work-info">
               <h3>Amor Doce Confusão</h3>
-              <span>2025</span>
+              <span class="work-meta">LONGA-METRAGEM · 2025</span>
             </div>
-            <p class="work-type">Longa-metragem · Direção de fotografia</p>
+            <p class="work-roles">Direção de fotografia</p>
           </a>
 
           <a class="work-card" href="#crime-sem-castigo">
@@ -425,9 +450,9 @@
             >
             <div class="work-info">
               <h3>Crime Sem Castigo</h3>
-              <span>2026</span>
+              <span class="work-meta">LONGA-METRAGEM · 2026</span>
             </div>
-            <p class="work-type">Longa-metragem · Direção de fotografia</p>
+            <p class="work-roles">Direção de fotografia</p>
           </a>
 
           <a class="work-card" href="#quem-parte-quem-fica">
@@ -438,9 +463,9 @@
             >
             <div class="work-info">
               <h3>Quem Parte, Quem Fica?</h3>
-              <span>2027</span>
+              <span class="work-meta">LONGA-METRAGEM · 2027</span>
             </div>
-            <p class="work-type">Longa-metragem · Direção · Direção de fotografia</p>
+            <p class="work-roles">Direção · Direção de fotografia</p>
           </a>
 
           <a class="work-card" href="#lumem-craft">
@@ -451,9 +476,9 @@
             >
             <div class="work-info">
               <h3>Lumem Craft – Creation</h3>
-              <span>2019</span>
+              <span class="work-meta">VIDEOCLIPE · 2019</span>
             </div>
-            <p class="work-type">Videoclipe · Direção de fotografia</p>
+            <p class="work-roles">Direção de fotografia</p>
           </a>
 
           <a class="work-card" href="#short-films">
@@ -464,9 +489,9 @@
             >
             <div class="work-info">
               <h3>Curtas-metragens</h3>
-              <span>Filmografia</span>
+              <span class="work-meta">FILMOGRAFIA</span>
             </div>
-            <p class="work-type">Seleção de curtas-metragens</p>
+            <p class="work-roles">Seleção de curtas-metragens</p>
           </a>
 
           <a class="work-card" href="#commercials">
@@ -477,9 +502,9 @@
             >
             <div class="work-info">
               <h3>Comerciais &amp; Institucionais</h3>
-              <span>Seleção</span>
+              <span class="work-meta">SELEÇÃO</span>
             </div>
-            <p class="work-type">Filmes publicitários e institucionais</p>
+            <p class="work-roles">Filmes publicitários e institucionais</p>
           </a>
 
         </div>
