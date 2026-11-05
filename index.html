@@ -154,7 +154,63 @@
       transition: opacity 0.25s ease;
     }
 
-    .work-card:hover img {
+
+    .work-image-wrap {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .work-image-wrap img {
+      width: 100%;
+      aspect-ratio: 1.66 / 1;
+      display: block;
+      object-fit: cover;
+      background: #dedcd5;
+      transition: opacity 0.25s ease;
+    }
+
+    .award-mark {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      max-width: 46%;
+      padding: 5px 7px;
+      color: #f5f0df;
+      background: rgba(15, 14, 12, 0.58);
+      text-align: center;
+      font-size: 8px;
+      line-height: 1.25;
+      letter-spacing: 0.25px;
+      text-shadow: 0 1px 2px rgba(0,0,0,.35);
+    }
+
+    .award-mark svg {
+      width: 20px;
+      height: 28px;
+      flex: 0 0 auto;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.35;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .award-mark .award-copy {
+      display: block;
+    }
+
+    .award-mark strong {
+      display: block;
+      font-size: 7px;
+      font-weight: 600;
+      letter-spacing: 0.65px;
+      margin-bottom: 2px;
+    }
+
+    .work-card:hover .work-image-wrap img {
       opacity: 0.82;
     }
 
@@ -366,8 +422,8 @@
 
           <a class="work-card" href="#madame-durocher">
             <img
-              src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80"
-              alt="Imagem provisória para Madame Durocher"
+              src="portfolio-assets/madame-durocher.webp"
+              alt="Frame de madame durocher"
               loading="lazy"
             >
             <div class="work-info">
@@ -379,8 +435,8 @@
 
           <a class="work-card" href="#eike">
             <img
-              src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1200&q=80"
-              alt="Imagem provisória para Eike – Tudo ou Nada"
+              src="portfolio-assets/eike-tudo-ou-nada.webp"
+              alt="Frame de eike tudo ou nada"
               loading="lazy"
             >
             <div class="work-info">
@@ -392,8 +448,8 @@
 
           <a class="work-card" href="#conspiracao-condor">
             <img
-              src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80"
-              alt="Imagem provisória para A Conspiração Condor"
+              src="portfolio-assets/conspiracao-condor.webp"
+              alt="Frame de conspiracao condor"
               loading="lazy"
             >
             <div class="work-info">
@@ -404,11 +460,15 @@
           </a>
 
           <a class="work-card" href="#bruta-flor">
-            <img
-              src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1200&q=80"
-              alt="Imagem provisória para A Bruta Flor do Querer"
+            <div class="work-image-wrap"><img
+              src="portfolio-assets/bruta-flor-do-querer.webp"
+              alt="Frame de bruta flor do querer"
               loading="lazy"
-            >
+            ><span class="award-mark" aria-label="Premiação Festival de Gramado">
+      <svg viewBox="0 0 24 36" aria-hidden="true"><path d="M19 3C8 8 4 18 5 31M5 31C14 28 19 20 19 3"/><path d="M16 7l-5-1M12 12l-5-1M9 17l-4-1M7 22l-3 0M7 27l-2 1M9 31l-1 2M19 3l-3 4M17 8l-4 3M14 13l-4 3M11 18l-3 3M8 23l-2 4"/></svg>
+      <span class="award-copy"><strong>GRAMADO</strong>Melhor Direção<br>Melhor Fotografia</span>
+      <svg viewBox="0 0 24 36" aria-hidden="true"><path d="M19 3C8 8 4 18 5 31M5 31C14 28 19 20 19 3"/><path d="M16 7l-5-1M12 12l-5-1M9 17l-4-1M7 22l-3 0M7 27l-2 1M9 31l-1 2M19 3l-3 4M17 8l-4 3M14 13l-4 3M11 18l-3 3M8 23l-2 4"/></svg>
+    </span></div>
             <div class="work-info">
               <h3>A Bruta Flor do Querer</h3>
               <span class="work-meta">LONGA-METRAGEM · 2013</span>
@@ -417,11 +477,15 @@
           </a>
 
           <a class="work-card" href="#30-anos-blues">
-            <img
-              src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1200&q=80"
-              alt="Imagem provisória para 30 Anos Blues"
+            <div class="work-image-wrap"><img
+              src="portfolio-assets/30-anos-blues.webp"
+              alt="Frame de 30 anos blues"
               loading="lazy"
-            >
+            ><span class="award-mark" aria-label="Premiação Festival de Gramado">
+      <svg viewBox="0 0 24 36" aria-hidden="true"><path d="M19 3C8 8 4 18 5 31M5 31C14 28 19 20 19 3"/><path d="M16 7l-5-1M12 12l-5-1M9 17l-4-1M7 22l-3 0M7 27l-2 1M9 31l-1 2M19 3l-3 4M17 8l-4 3M14 13l-4 3M11 18l-3 3M8 23l-2 4"/></svg>
+      <span class="award-copy"><strong>GRAMADO</strong>Prêmio Especial<br>do Júri</span>
+      <svg viewBox="0 0 24 36" aria-hidden="true"><path d="M19 3C8 8 4 18 5 31M5 31C14 28 19 20 19 3"/><path d="M16 7l-5-1M12 12l-5-1M9 17l-4-1M7 22l-3 0M7 27l-2 1M9 31l-1 2M19 3l-3 4M17 8l-4 3M14 13l-4 3M11 18l-3 3M8 23l-2 4"/></svg>
+    </span></div>
             <div class="work-info">
               <h3>30 Anos Blues</h3>
               <span class="work-meta">LONGA-METRAGEM · 2019</span>
@@ -431,8 +495,8 @@
 
           <a class="work-card" href="#amor-doce-confusao">
             <img
-              src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80"
-              alt="Imagem provisória para Amor Doce Confusão"
+              src="portfolio-assets/amor-doce-confusao.webp"
+              alt="Frame de amor doce confusao"
               loading="lazy"
             >
             <div class="work-info">
@@ -444,8 +508,8 @@
 
           <a class="work-card" href="#crime-sem-castigo">
             <img
-              src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80"
-              alt="Imagem provisória para Crime Sem Castigo"
+              src="portfolio-assets/crime-sem-castigo.webp"
+              alt="Frame de crime sem castigo"
               loading="lazy"
             >
             <div class="work-info">
@@ -457,8 +521,8 @@
 
           <a class="work-card" href="#quem-parte-quem-fica">
             <img
-              src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1200&q=80"
-              alt="Imagem provisória para Quem Parte, Quem Fica?"
+              src="portfolio-assets/quem-parte-quem-fica.webp"
+              alt="Frame de quem parte quem fica"
               loading="lazy"
             >
             <div class="work-info">
@@ -470,8 +534,8 @@
 
           <a class="work-card" href="#lumem-craft">
             <img
-              src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80"
-              alt="Imagem provisória para Lumem Craft – Creation"
+              src="portfolio-assets/lumem-craft-creation.webp"
+              alt="Frame de lumem craft creation"
               loading="lazy"
             >
             <div class="work-info">
